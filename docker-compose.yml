@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  cypress-pnpm:
+    image: marciohm/cypress-pnpm
+    build: .
+    command: /bin/bash

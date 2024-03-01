@@ -4,4 +4,6 @@ services:
   cypress-pnpm:
     image: marciohm/cypress-pnpm
     build: .
-    command: /bin/bash
+    volumes:
+      - ./Makefile:/Makefile # Copy the repo's Makefile into docker instance file system
+    command: make init
